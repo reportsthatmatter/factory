@@ -21,4 +21,4 @@ Git worktrees (`rtm-<slug>-<MMDD>`, `ingest-<slug>-<MMDD>`, `<site>-reports/`) s
 
 ## Status
 
-Local git repo, started 2026-10-16 (no remote yet). Proposed as `reportsthatmatter/factory` on GitHub (private): see the decision record in the site repo.
+Public at https://github.com/reportsthatmatter/factory since 2026-10-16 (decision 0021 in the site repo). Logs and scratch stay local (gitignored): they can hold command output not fit to publish.
