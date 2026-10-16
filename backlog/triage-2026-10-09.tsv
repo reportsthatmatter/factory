@@ -1,0 +1,252 @@
+id	stream	decision	new_priority	reason
+y2t.1	marketing	needs-rufus		
+4g4d.1	platform	needs-rufus		
+4g4d	platform	keep		
+t4al	platform	close-done		Mitigated by #287 (read layouts, rank-ordered search, d1-usage, ship budgets reads); the quota itself goes with hosting move 4g4d
+bght.8	product	close-done		Shipped with #279/batch A; quote cards preview on production (bead notes)
+bght	product	keep		
+y2y8.9	marketing	needs-rufus		
+y2y8.7	marketing	needs-rufus		
+y2y8	marketing	keep		
+i8en	quality	needs-rufus	2	
+ifb5	reports	keep	2	
+2oz	platform	needs-rufus		
+ivg.4	reports	keep	2	
+ivg	quality	keep		
+38s	quality	keep		
+y2t.6	marketing	keep		
+y2t	marketing	keep		
+g0w	reports	keep		
+irfs	platform	keep		
+r52n	platform	keep		
+h3iu	platform	keep		
+smof	quality	keep		
+6kky	platform	needs-rufus		
+5p44	quality	keep		
+xkmh	quality	keep		
+q2ph	platform	keep		
+4g4d.5	platform	keep		
+4g4d.4	platform	keep		
+4g4d.2	platform	keep		
+4g4d.3	platform	keep		
+bght.2	product	keep		
+as31	product	keep		
+gqsy.6	reports	keep		
+gqsy.5	reports	keep		
+gqsy	reports	keep		
+38s.21	quality	keep		
+38s.20	quality	keep		
+38s.19	quality	keep		
+38s.18	quality	close-done		Shipped in site #281 (try --base, findings diff)
+38s.17	quality	needs-rufus		
+38s.16	quality	keep		
+y2y8.8	marketing	needs-rufus		
+y2y8.3	marketing	keep		
+y2y8.2	marketing	keep		
+y2y8.1	marketing	keep		
+9u69	quality	needs-rufus		
+p4lp	platform	keep		
+kgz8	quality	defer	4	Not before launch; revisit after
+mizx	quality	keep		
+mv0j	quality	keep		
+hmqk	quality	keep		
+woke	quality	keep		
+ifb5.13	reports	keep		
+ifb5.12	reports	keep		
+ifb5.11	reports	keep		
+ifb5.10	reports	keep		
+82v3	platform	close-done		Convention captured in AGENTS.md "Decisions and open questions"
+0ino	marketing	needs-rufus		
+qap0	quality	needs-rufus		
+0z1o	marketing	keep		
+ifb5.8	reports	keep		
+ifb5.7	reports	keep		
+ifb5.6	reports	keep		
+ifb5.5	reports	keep		
+ifb5.4	reports	keep		
+ifb5.3	reports	keep		
+ifb5.2	reports	keep		
+ifb5.1	reports	keep		
+jsk3	platform	keep		
+b78.10	quality	keep		
+tgx2	quality	keep		
+egsa	reports	keep		
+iij	quality	keep		
+vey	quality	keep		
+hxg	quality	keep		
+38s.13	quality	keep		
+htt	quality	keep		
+mkm	quality	keep		
+7go	quality	keep		
+b78.8	quality	keep		
+xqu	quality	keep	3	
+pwc	quality	keep		
+38s.7	quality	needs-rufus		
+38s.5	quality	defer	4	Not before launch; revisit after
+38s.3	quality	defer	4	Not before launch; revisit after
+38s.4	quality	defer	4	Not before launch; revisit after
+8rv	quality	keep		
+r0w	quality	keep		
+qai	quality	keep		
+fkx	quality	keep		
+7ta	quality	keep		
+yt8	quality	keep		
+osv	quality	wontfix		Duelfer parked; superseded by the hybrid-from-HTML route (ivg.4)
+1xr	quality	keep	3	
+8oc	quality	keep		
+d0h	reports	defer	4	Not before launch; revisit after
+1l4	quality	wontfix		Duelfer parked; superseded by the hybrid-from-HTML route (ivg.4)
+0bf	quality	keep	3	
+nen	quality	keep		
+b78	quality	keep		
+b78.1	quality	keep		
+9br.2	reports	defer	4	Not before launch; revisit after
+9br.1	reports	defer	4	Not before launch; revisit after
+djy	quality	keep		
+b5x	quality	close-done		Fixed: Saville full.md heading reads "Chapter 7: The period up to July 1971"
+dam	quality	keep		
+y2t.5	marketing	keep		
+g0w.5	product	keep		
+699.1	product	keep		
+699	product	keep		
+9br	reports	defer	4	Not before launch; revisit after
+bea	product	defer	4	Not before launch; revisit after
+1kv	quality	wontfix		No FCIC report in the corpus or candidate list
+1ptg	quality	keep		
+2t3t	quality	keep		
+ni9o	quality	keep		
+bnqs	quality	keep		
+1iz4	quality	keep		
+wrjn	reports	keep		
+pvzd	platform	keep		
+f1o1	product	keep		
+gqsy.4.2	reports	keep		
+gqsy.4.1	reports	keep		
+5sf1	quality	keep		
+jr1t	quality	keep		
+sh1b	quality	keep		
+865n	reports	keep		
+vem3	reports	keep		
+bqu0	quality	keep		
+ib2b	platform	keep		
+n5p8	marketing	keep		
+5qmm	platform	keep		
+ai23	platform	keep		
+pfgn	quality	keep		
+npg3	quality	keep		
+rw1q	quality	keep		
+gqsy.2.2	reports	keep		
+0vll	reports	keep		
+gqsy.2.1	reports	keep		
+j6ld	platform	keep		
+54li	quality	keep		
+ud34	quality	keep		
+vxln	quality	close-done		Shipped in site #281 (pnpm ingest link)
+u09x	platform	keep		
+6142	platform	keep		
+0eeq	platform	keep		
+8ukk	platform	keep		
+hyph	platform	keep		
+3ak7	platform	keep		
+xdce	quality	keep		
+7hjb	quality	keep		
+gqsy.11	reports	keep		
+gqsy.12	reports	keep		
+gqsy.10	reports	keep		
+gqsy.9	reports	keep		
+gqsy.8	reports	keep		
+gqsy.7	reports	keep		
+y2y8.6	marketing	keep		
+y2y8.5	marketing	keep		
+ewtf	platform	keep		
+58hb	quality	keep		
+quam	quality	keep		
+m827	quality	keep		
+fuhn	quality	keep		
+ebnp	quality	keep		
+aht0	quality	keep		
+j8kw	quality	keep		
+efso	quality	needs-rufus		
+rf4c	quality	keep		
+ozi9	quality	keep		
+fc3x	quality	needs-rufus		
+uren	quality	keep		
+r4q2	platform	keep		
+odm6	quality	keep		
+fbgx	reports	keep		
+al49	quality	keep		
+e5dv	reports	wontfix		Duplicate of ifb5.1 (stage 1 sourcing skill) and report-preparation.md sourcing section
+6nkk	reports	defer	4	Not before launch; revisit after
+e693	reports	defer	4	Not before launch; revisit after
+9xtj	quality	keep		
+yjy4	quality	keep		
+xzyx	product	keep		
+kkna	quality	keep		
+moii	quality	keep		
+ay3	quality	keep		
+98u	quality	keep		
+fzw	quality	keep		
+2cf	quality	keep		
+g3h	quality	keep		
+15h	quality	keep		
+pt6	quality	keep		
+07k	quality	keep		
+05c	quality	keep		
+bi5	quality	keep		
+n0l	quality	keep		
+pq0	quality	keep		
+lj4	quality	keep		
+men	quality	keep		
+8yr	quality	wontfix		Duelfer parked; re-ingest happens via ivg.4 if it is unparked
+ivg.6	quality	keep		
+ivg.5	reports	keep		
+1vo	quality	keep		
+6wb	quality	wontfix		Accepted one-step signal move after quoteListRunOns; x0n tracks Lehman lists
+zja	quality	wontfix		Accepted one-step signal move after quoteListRunOns; not reader-facing
+38s.14	quality	keep		
+8ys	quality	keep		
+wck	quality	keep		
+17v	quality	keep		
+wcl	quality	keep		
+2nx	quality	keep		
+a3y	quality	keep		
+nk3	reports	defer	4	Not before launch; revisit after
+x0n	quality	keep		
+liv	quality	keep		
+b78.7	quality	keep		
+b78.6	quality	keep		
+djt	quality	keep		
+94u	reports	defer	4	Not before launch; revisit after
+0a7	reports	defer	4	Not before launch; revisit after
+4yp	quality	keep		
+c25	product	keep		
+38k	product	defer	4	Not before launch; revisit after
+su9	product	defer	4	Not before launch; revisit after
+g0w.6	reports	keep		
+699.2	product	keep		
+s9b	reports	wontfix		Vague; report-preparation.md is fixed in the same change whenever a run finds a gap (AGENTS.md)
+wl0.11	reports	wontfix		Duplicate of fbgx (live reports below the gates, incl. PROCESSING.md) and wl0.12 (generate the facts)
+wl0.12	reports	keep		
+wl0.10	reports	wontfix		Duplicate of fbgx (live reports below the gates, incl. PROCESSING.md) and wl0.12 (generate the facts)
+wl0.9	reports	wontfix		Duplicate of fbgx (live reports below the gates, incl. PROCESSING.md) and wl0.12 (generate the facts)
+wl0.7	reports	wontfix		Duplicate of fbgx (live reports below the gates, incl. PROCESSING.md) and wl0.12 (generate the facts)
+wl0.8	reports	wontfix		Duplicate of fbgx (live reports below the gates, incl. PROCESSING.md) and wl0.12 (generate the facts)
+wl0.6	reports	wontfix		Duplicate of fbgx (live reports below the gates, incl. PROCESSING.md) and wl0.12 (generate the facts)
+wl0.5	reports	wontfix		Duplicate of fbgx (live reports below the gates, incl. PROCESSING.md) and wl0.12 (generate the facts)
+wl0.3	reports	wontfix		Duplicate of fbgx (live reports below the gates, incl. PROCESSING.md) and wl0.12 (generate the facts)
+wl0.4	reports	wontfix		Duplicate of fbgx (live reports below the gates, incl. PROCESSING.md) and wl0.12 (generate the facts)
+wl0.2	reports	wontfix		Duplicate of fbgx (live reports below the gates, incl. PROCESSING.md) and wl0.12 (generate the facts)
+wdt	reports	defer	4	Not before launch; revisit after
+wl0	reports	keep		
+q0m	quality	wontfix		Superseded by pageBreakContinuations and its roll-out (nen, sh1b/ni9o work)
+agk.1	quality	keep		
+aqn	quality	wontfix		Vague; per-report note-sequence beads cover the real cases
+3rj	product	keep		
+uk0	product	defer	4	Not before launch; revisit after
+7vz	quality	keep		
+c0h	platform	wontfix		No driver for a renderer migration; revisit if a feature needs it
+gpy	quality	wontfix		Stale and vague (09-06); specific footnote/heading defects have their own beads
+d9vl	quality	keep		
+461y	platform	keep		
+699.3	product	keep		
+2u6	platform	wontfix		Visual changelog not maintained; not worth it before launch

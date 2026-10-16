@@ -1,0 +1,23 @@
+# Agent protocol for the 2026-10-09 session
+
+This is the 2026-10-02 protocol (`.agent-protocol-2026-10-02.md`) updated with the lessons of 2026-10-03/04. Read it before starting. Where they differ, this file wins.
+
+Layout: `~/src/reportsthatmatter/` holds the site repo `reportsthatmatter/` (shared checkout, main — NEVER switch branches, stash or reset there), `ingest/` (shared checkout of @rtm/ingest, main — same rule), and one sibling repo per report (e.g. `jack-smith-report/`, `uk-leveson-inquiry/`). The Beads DB lives in `reportsthatmatter/` (`bd show <id>`, `bd update <id> --append-notes ...`). Read `reportsthatmatter/AGENTS.md` (esp. "Working conventions" and "Work streams"), `docs/report-pipeline.md` and `scripts/ingest/README.md` before starting. Launch is planned for the week of 2026-10-12; Rufus is not available to answer questions during this run.
+
+Several agents run at the same time, each owning different reports and files. Rules:
+
+1. **Worktrees, named `*-1009`.** Site: `git -C ~/src/reportsthatmatter/reportsthatmatter worktree add ../rtm-<slug>-1009 -b <branch> origin/main`, then `pnpm bootstrap` in it (never symlink node_modules). Ingest: `git -C ~/src/reportsthatmatter/ingest worktree add ../ingest-<slug>-1009 -b <branch> origin/main`, `CI=true pnpm install`. Report repos: `pnpm ingest worktrees <id…>` from your site worktree (it prints the `RTM_REPORT_DIRS` to export). You own only the report repos you were told you own.
+2. **Pipeline fixes go in ingest, as passes.** Prefer an opt-in pass the report declares in its `ingest.ts` over changing a shared default. If you change a shared default, measure every report's move and say so.
+3. **Test against your unreleased ingest** (`pnpm ingest link` / `try --base`, see `scripts/ingest/README.md`). Never commit a link override.
+4. **Do not release.** Do not merge, tag, deploy, publish, seed or query production D1 (no `wrangler d1 execute --remote`). Push branches and open PRs; describe any pin bump needed. One integrator ships after a reviewer agent's review.
+5. **Measure.** Before/after numbers for your defect across the report (and the corpus for a shared pass). Run `pnpm ingest check`, `pnpm corpus check`, `pnpm quality check` and read the diffs. Run `pnpm quality ratchet` in your trial if a signal improves, and commit the ratchet in your PR. Never `accept`/`baseline` just to quieten a check. Look at the rendered pages for the bead's examples.
+6. **Peer noise.** If verify or corpus check fails only for reports you do not own, check `git -C ../<repo> status`: that is peer noise; note it and move on. Never `pkill -f scripts/verify.sh` (it kills other agents' runs).
+7. **Editorial.** If your report's paragraph ids move, update `editorial/<id>.yaml` in your site PR (source only; not `src/generated/editorial.ts`).
+8. **Beads.** Append notes to your bead(s) (`bd update <id> --append-notes "..."`). Do not close them (the integrator closes on ship) — EXCEPT in a verify-and-close batch, where you close beads you have shown are already fixed or obsolete, with a `--reason` citing the evidence. File new defects with `bd create ... --deps discovered-from:<id>` and label them with one stream (`stream:quality`, `stream:product`, `stream:platform`, `stream:reports`, `stream:marketing`). Append a one-line example to `reportsthatmatter-b78.1`'s notes for each defect class no check caught. Run `bd dolt push` after your bead writes.
+9. **Final report** (your last message): branches and PR URLs, the passes/options a report's `ingest.ts` must declare, before/after measurements, every report whose text or ids move, editorial changes, the pin bump needed, anything unfinished, and any real question for Rufus (logged as a `needs-user` or `decision` bead, not just mentioned). Keep it tight.
+10. Markdown files: never hard-wrap. Commit messages and PR bodies: plain.
+11. Keep going without asking for input; make reasonable, reversible decisions and record them.
+12. **Decisions:** questions of direction get a record in `docs/decisions/` and a bead labelled `decision`; never settle them in chat.
+13. **Retro (required, last section of your final report):** "Getting better faster": what slowed you down; what check, tool or reference text would have caught your defects earlier or measured your fix directly; one concrete proposal.
+14. **Lessons:** append the lessons worth keeping (one line each, with evidence) to `docs/design/lessons.md` in the same PR.
+15. **Usage limits.** If you are cut off, the supervisor resumes you; leave your worktree and branch in a state that says where you were (commit WIP to your branch with a `WIP:` message and push).
