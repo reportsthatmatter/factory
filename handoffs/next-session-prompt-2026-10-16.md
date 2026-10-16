@@ -30,3 +30,20 @@ Replaces `next-session-prompt-2026-10-10.md`. Start in `~/src/reportsthatmatter/
 5. **3d41** email capture (recommended: none at launch).
 6. Two published blog posts still say "thirteen reports" — leave or update?
 7. Still open from 10 Oct: licences (y2y8.9, P2), AI wording (0ino), marks cache #294, Search Console/Bing (y2t.1).
+
+## Update 2026-10-17 ~00:00 CEST: launch batch shipped
+
+- Launch is **Tue 2026-10-20**; Rufus accepted all recommended defaults (see `../protocols/agent-protocol-2026-10-16.md`, evening update; decision records 0009, 0015-0020, 0022, 0024-0032).
+- Shipped and deployed 2026-10-16 21:47Z (Worker 5eeeb91d): batch 5 (#337-#344: affected_community flag, Tier C fails, release-tooling fixes, remote-gate tests, CLS fix), decisions #345, launch dates #346, queue rules #348 (tier A only for affected reports, news_day_only Jack Smith/Jan 6/Chilcot, kept-clear dates, first post Challenger p.146 on 20 Oct, runway to 18 Nov), source line + /about#contact + removal form + /about#ai #349, licences #347 + all repos (MIT; per-report text status), marketing #4 (launch-day checklist `drafts/2026-10/launch-day-checklist.md`), changelog #350. Production verify passes.
+- Reviews: `../reviews/review-batch5-2026-10-16.md`, `review-batch6-launch-2026-10-16.md`, `review-licences-2026-10-16.md`.
+- Worktree clean-up removed ~66 merged, pushed worktrees (more than intended; nothing lost). Kept ones with unpushed/uncommitted work are listed in the integrator's report: trial review worktrees, rtm-decisions/hbnj/launchdates (uncommitted), unmerged branch worktrees.
+
+## Launch steps (Rufus unless noted)
+
+1. By Sat 17: `gh secret set BLUESKY_HANDLE` and `gh secret set BLUESKY_APP_PASSWORD` (password at `~/.config/bluesky/reportsthatmatter`); switch the Bluesky handle to reportsthatmatter.org.
+2. Mon 19 (agent): gate check, `POSTER_TODAY=2026-10-20 pnpm post-next`, `gh workflow run post-next.yml -f dry_run=true`, production verify.
+3. Tue 20: `gh variable set POSTER_LIVE --body true` before 14:00 UTC; at 14:00 `gh workflow run post-next.yml -R reportsthatmatter/reportsthatmatter -f dry_run=false` (scheduled run is 4-8 h late: gweq); then the checklist.
+
+## Open questions (new)
+
+fh6v contact email inbox; 3g1h Litvinenko affected?; vx0u campaign-group emails before 12/14 Nov; 0018 phone nav option 2 OK?; Columbia "History is cause" card (Tier B); 9kn4 Hillsborough licence (recommend keep live while asking the Home Office + TNA); hx7j Lehman; MIT holder name. Agent-doable next: gweq (late cron), pp7b (queue runway), sync-d1 (4g4d.5), ba23, y8t6, 4g4d.8 remainder, decommission 4g4d.7 on/after 23 Oct.
