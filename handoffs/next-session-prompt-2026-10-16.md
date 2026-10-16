@@ -47,3 +47,16 @@ Replaces `next-session-prompt-2026-10-10.md`. Start in `~/src/reportsthatmatter/
 ## Open questions (new)
 
 fh6v contact email inbox; 3g1h Litvinenko affected?; vx0u campaign-group emails before 12/14 Nov; 0018 phone nav option 2 OK?; Columbia "History is cause" card (Tier B); 9kn4 Hillsborough licence (recommend keep live while asking the Home Office + TNA); hx7j Lehman; MIT holder name. Agent-doable next: gweq (late cron), pp7b (queue runway), sync-d1 (4g4d.5), ba23, y8t6, 4g4d.8 remainder, decommission 4g4d.7 on/after 23 Oct.
+
+## Update 2026-10-17 ~01:30 CEST: pre-launch batch 7 shipped
+
+- Deployed 2026-10-16 23:15Z (Worker a2d5c9c8): poster off-peak crons 13:47/14:17/14:47/15:17 UTC + not-before 13:00 (#351, gweq open until a week measured), Litvinenko affected + Columbia Tier A card on 19 Nov + /about#contact email (#352), changelog #353; marketing #5, #6 (no draft names the dead; campaign-group emails drafted). Review: `../reviews/review-batch7-prelaunch-2026-10-17.md`.
+- contact@reportsthatmatter.org → rufus@lifeitself.org via Cloudflare Email Routing (Datopian zone; rule f93d4f08). Rufus to send a test.
+- Bluesky: app password works (identifier = DID or reportsthatmatter.bsky.social). Actions secrets set (BLUESKY_HANDLE = did:plc:owtfs5pk265ppfmojghzr56t). Workflow dry run green but exits before login until 20 Oct; local login tested OK. Handle still not reportsthatmatter.org.
+- Local `POSTER_TODAY=2026-10-20 pnpm post-next` selects Challenger p. 146.
+
+## Launch day (Tue 20 Oct), from the batch 7 review
+
+Mon 19 (agent): gate check, production verify, `gh workflow run post-next.yml -f dry_run=true` after 13:00 UTC on 20 Oct is the first real login test, so on Mon do a local dry run with `POSTER_TODAY=2026-10-20`. Tue 20: Rufus `gh variable set POSTER_LIVE --body true` before 13:47 UTC; agent check 13:50; Rufus backup `gh workflow run post-next.yml -R reportsthatmatter/reportsthatmatter -f dry_run=false` at 13:55 only if nothing posted; Show HN 14:00; agent confirms 14:10; then `marketing/drafts/2026-10/launch-day-checklist.md`.
+
+Open for Rufus: Thiokol memo image (prints two names) in the prelaunch notes; Post Office 6.205 / Grenfell 2.19 offered as cards in the campaign emails but read as Tier B; handle switch; Search Console/Bing; Hillsborough licence email (9kn4); campaign emails by 2 Nov.
