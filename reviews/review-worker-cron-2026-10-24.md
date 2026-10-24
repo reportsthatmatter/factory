@@ -1,0 +1,3 @@
+# Review: PR #356, poster Worker cron (2026-10-24)
+
+Reviewer: subagent of worker-cron. First pass: ship with fixes (blocker: the GitHub run did not overlay the account, so a queue that changed after the Worker read it could double-post; plus manual-run race, alias redirects in the deep-link check, src=bsky on the probe, UTC day parsing, raw cache wording). All fixed in the PR, with tests. Second pass: ship; two nits (validate only the final pick; a failed `posts --check` blocked write-back), both fixed (`POSTER_RECORD_ONLY`). Merged as 5d4740ea; Worker rtm-poster deployed from main (version 31180142).
